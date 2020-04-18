@@ -1,6 +1,8 @@
 # TicTacToe
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.2.3.
+It's a game created with Agular in single and multi player mode.
+Note: Contact us form is jsut a dummy form.
 
 ## Development server
 
