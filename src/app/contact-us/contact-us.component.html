@@ -1,0 +1,60 @@
+<div class="container">
+  <form #myForm="ngForm">
+    <div class="dvSection">
+      <label for="fname">First Name</label>
+      <input type="text" class="form-control" id="fname" name="firstname" placeholder="Your name.."
+        [(ngModel)]="model.firstname" required #firstname="ngModel">
+      <div [hidden]="firstname.valid || firstname.pristine" class="alert-danger">
+        First Name is required
+      </div>
+
+      <label for="lname">Last Name</label>
+      <input type="text" class="form-control" id="lname" name="lastname" placeholder="Your last name.."
+        [(ngModel)]="model.lastname" required #lastname="ngModel">
+      <div [hidden]="lastname.valid || lastname.pristine" class="alert-danger">
+        Last Name is required
+      </div>
+
+      <label for="country">Country</label>
+      <select id="country" class="form-control" name="country" [(ngModel)]="model.country" required #country="ngModel">
+        <option *ngFor="let country of countries" [value]="country">{{country}}</option>
+      </select>
+      <div [hidden]="country.valid || country.pristine" class="alert-danger">
+        Country is required
+      </div>
+
+      <label for="address">Address</label>
+      <textarea id="address" name="address" class="form-control" placeholder="Write something.."
+        style="height:120px"></textarea>
+      <input id="btnSubmit" type="submit" value="Submit" (click)="saveData()" [disabled]="myForm.invalid">
+      <input id="btnReset" type="reset" value="Reset" (click)="resetData()">
+    </div>
+    <div class="dvSection">
+
+      <label for="responsetype">Respose Preferred by</label>
+      <div class="dvSubSection">
+        <div class="dvField" *ngFor="let response of model.responsetype"><input type="radio"
+            class="form-control" id="option{{response}}" name="responsetype" [value]="false"
+            (click)="model.response = response" /><span>{{response}} </span></div>
+      </div>
+      <label for="hobbies">Hobbies</label>
+      <div class="dvSubSection">
+        <div class="dvField" *ngFor="let hobby of model.hobbies"><input type="checkbox"
+            class="form-control" id="check{{hobby.key}}" name="hobbies"
+            (click)="hobby.selected = !hobby.selected"><span>{{hobby.value}}</span> </div>
+      </div>
+      <label for="otherinterest">Connected To</label>
+      <div class="">
+        <select id="connctedto" class="form-control" name="connctedto" multiple="multiple" #connecttoDDl (click)="setChoice(connecttoDDl)">
+          <option id="select{{connect.key}}" *ngFor="let connect of model.connectedto" [value]="connect.value"  #optionModel
+          >{{connect.value}}</option>
+        </select>
+      </div>
+      <label for="picture">Upload Picture</label>
+      <div class="dvSubSection">
+        <div class="dvField" id="picture" name="picture" [(ngModel)]="model.pucture"> <input type="file"></div>       
+      </div>
+      <label style="float:right;color:rgb(240, 216, 0);" id="result">{{result}}</label>
+    </div>
+  </form>
+</div>

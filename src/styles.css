@@ -1,0 +1,71 @@
+/* fallback */
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/materialicons/v48/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: 'bodyFont';
+  src: url(assets/font/bodyfont.woff) format("woff");
+}
+
+@font-face
+{
+  font-family: 'labelFont';
+  src: url(assets/font/ZombieCarshelRegular.woff) format("woff");
+}
+@font-face
+{
+  font-family: 'inputFont';
+  src: url(assets/font/THECHAMPRegular.woff) format("woff");
+}
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
+}
+
+
+.cellIconO{
+  color: rgb(255, 230, 0);
+  font-size: 1.2em;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0; 
+    -webkit-box-shadow: 1px 0px 10px 8px rgba(216, 199, 48,1);
+    -moz-box-shadow: 1px 0px 10px 8px rgba(216, 199, 48,1);
+    box-shadow: 1px 0px 10px 8px rgba(216, 199, 48,1);
+    height: 100%;
+    line-height: 235%;
+    border: 1px solid white;
+}
+.cellIconX{
+  color: rgb(21, 255, 0);
+  font-size: 1.2em;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    -webkit-box-shadow: 1px 0px 10px 8px rgba(18, 211, 105,1);
+    -moz-box-shadow: 1px 0px 10px 8px rgba(18, 211, 105,1);
+    box-shadow: 1px 0px 10px 8px rgba(18, 211, 105,1);
+    height: 100%;
+    line-height: 235%;
+    border: 1px solid white;
+}

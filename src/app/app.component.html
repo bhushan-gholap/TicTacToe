@@ -1,0 +1,23 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div class="box">
+  <div class="header">
+    <div [ngClass]="{'logo' : togglevar % 3 === 0,'logoActive': togglevar % 3 === 1,'logoActive1': togglevar % 3 === 2}">
+      Tic Tac Toe </div>
+    <div class="header-right">
+      <a id="linkReset" routerLink="/" (click)="panelSwitch = false"> Home</a>
+      <a id="linkPlay" routerLink="game" (click)="panelSwitch = true"> Play</a>
+      <a id="linkContactUS" routerLink="contact-us" (click)="panelSwitch = true"> Contact-Us</a>
+    </div>
+  </div>
+  <div class="hf-left">
+    <div class="homePanel" *ngIf="!panelSwitch">
+      <div class="btnPlay"><a id="linkPlayMain" routerLink="game" (click)="panelSwitch = true">Start</a></div>
+      <div *ngFor="let cell of gridDisplay">
+        <div
+          [ngClass]="{'cell': cell.randomCell === 1,'cell1':  cell.randomCell === 2,'cell2':  cell.randomCell === 3,'cell3':  cell.randomCell === 4,'cell4':  cell.randomCell === 5,'cell5':  cell.randomCell === 6,'cell6':  cell.randomCell === 7,'cell7':  cell.randomCell === 8,'cell8':  cell.randomCell === 9,'cell9':  cell.randomCell === 10}">
+          {{cell.letter}}</div>
+      </div>
+    </div>
+    <router-outlet *ngIf="panelSwitch"></router-outlet>
+  </div>
+</div>

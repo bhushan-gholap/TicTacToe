@@ -1,0 +1,7 @@
+<div class="dvHeader" *ngIf="result.length>0">
+    <div class="dvResult">{{result}}</div>
+</div>
+<div class="dvGrid">
+    <div id="{{cell.id}}" class="dvCell" *ngFor="let cell of cells" (click)="markCell(cell,id)" [innerHtml]="cell.innerHtml">{{cell.id}}
+    </div>
+</div>

@@ -1,0 +1,25 @@
+<div class="gamePanel">
+  <div class="f-left" *ngIf="singlePlayer==null">    
+      <div class="modeSelect" (click)="singlePlayer = true">Single Player </div> 
+      <div class="modeSelect1" (click)="singlePlayer = false">Multi Player </div>
+      <!-- <div *ngIf="player1 ==='' && player2 === ''" style="border: none; margin: 2.8% 0"><i class="material-icons"
+        [ngClass]="{'symbol': (togglevar % 2) === 0,'symbolChange': (togglevar % 2) === 1}" 
+          style="font-size: 50px;">arrow_forward</i></div> -->
+  </div>
+  <div class="f-left"  *ngIf="singlePlayer!==null" >
+    <div *ngIf="player1 ==='' && player2 === ''" style="border: none;margin: 2.7% 2%"><span>Pick your sign </span> </div>
+    <div *ngIf="player1 ==='' && player2 === ''" style="border: none; margin: 2.8% 0"><i class="material-icons"
+      [ngClass]="{'symbol': (togglevar % 2) === 0,'symbolChange': (togglevar % 2) === 1}" 
+        style="font-size: 50px;">arrow_forward</i></div>
+    <div class="dvPlayer"><span>{{player1}}</span> </div>
+    <div class="dvSign" (click)="setPlayer(0)"><a [routerLink]="['play', 0,singlePlayer]"><i id="panorama_fish_eyeSign" class="O material-icons">
+          panorama_fish_eye
+        </i></a></div>
+    <div class="dvPlayer"><span>{{player2}}</span> </div>
+    <div class="dvSign" (click)="setPlayer(1)"><a [routerLink]="['play', 1,singlePlayer]"><i id="clearSign" class="X material-icons">
+          clear
+        </i></a></div>
+  </div>
+  <div *ngIf="player1 !=='' && player2 !== ''" class="dvHover"></div>
+  <router-outlet *ngIf="player1 !=='' && player2 !== ''"></router-outlet>
+</div>

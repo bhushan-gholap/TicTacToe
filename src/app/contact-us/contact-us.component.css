@@ -1,0 +1,130 @@
+
+  label{
+    font-family: 'labelFont' !important;
+    font-size: 1.5em;
+    color: rgb(0, 207, 111); /*rgb(91, 204, 95);*/
+  }
+  input[type=file]{
+    font-family: 'labelFont' !important;
+    font-size: 1em;
+  }
+/* Style inputs with type="text", select elements and textareas */
+input[type=text],select, textarea {
+    font-family: 'inputFont' !important;
+    font-size: 1em;
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */  
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */    
+-webkit-box-shadow: 1px 0px 10px 1px rgba(31,25,11,0.69);
+-moz-box-shadow: 1px 0px 10px 1px rgba(31,25,11,0.69);
+box-shadow: 1px 0px 10px 1px rgba(31,25,11,0.69);
+color:rgb(255, 255, 255);
+background: rgba(0, 0, 0, 0.281);
+  }
+  
+  /* Style the submit button with a specific background color etc */
+  input[type=submit],input[type=reset] {
+    font-family: 'inputFont' !important;
+    font-size: 1em;
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    -webkit-box-shadow: 1px 0px 10px 4px rgba(31,25,11,0.69);
+    -moz-box-shadow: 1px 0px 10px 4px rgba(31,25,11,0.69);
+    box-shadow: 1px 0px 10px 4px rgba(31,25,11,0.69);
+    margin: 1%;
+  }
+  
+  /* When moving the mouse over the submit button, add a darker green color */
+  input[type=submit]:hover,input[type=reset]:hover  {
+    background-color: #45a049;
+    color: white;
+    -webkit-box-shadow: 1px 0px 10px 4px rgba(219,214,204,1);
+    -moz-box-shadow: 1px 0px 10px 4px rgba(219,214,204,1);
+    box-shadow: 1px 0px 10px 4px rgba(219,214,204,1); 
+    margin: 1%;
+  }
+  input[type=submit]:disabled  {
+    background-color: #3e5f3e;
+    color: black;
+    cursor: not-allowed;
+  }
+  input[type=text]:hover, select:hover, textarea:hover  {
+    -webkit-box-shadow: 1px 0px 10px 1px rgb(83, 83, 81);
+    -moz-box-shadow: 1px 0px 10px 1px rgba(83, 83, 81);
+    box-shadow: 1px 0px 10px 1px rgba(83, 83, 81);
+  }
+  
+  /* Add a background color and some padding around the form */
+  .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;      
+    background: hsla(0, 8%, 12%, 0.11);
+    height: 95%;
+  }
+  .ng-valid[required], .ng-valid.required  {
+    border: 1px solid rgb(1, 4, 180); /* green */    
+    -webkit-box-shadow: 1px 0px 10px 1px rgb(1, 4, 180);
+    -moz-box-shadow: 1px 0px 10px 1px rgba(1, 4, 180);
+    box-shadow: 1px 0px 10px 1px rgba(1, 4, 180);
+  }
+  
+  .ng-invalid:not(form)  {
+    border: 1px solid #f00e0a; /* red */ 
+    -webkit-box-shadow: 1px 0px 10px 1px rgb(95, 15, 52);
+    -moz-box-shadow: 1px 0px 10px 1px rgba(95, 15, 52);
+    box-shadow: 1px 0px 10px 1px rgba(95, 15, 52);
+  }
+  .alert-danger
+  {
+      color:rgb(95, 15, 52);
+      font-size: 1.2em;
+      float: right;
+      font-family: 'inputFont' !important;      
+  }
+  .dvSection{
+    float: left;
+    position: relative;
+    width: 47%;
+    border: 0px solid black;
+    padding: 1%;
+  }
+  
+input[type=radio], input[type=checkbox] { 
+  width: 30%; /* Full width */
+  resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */  
+color:rgb(0, 177, 168);
+}
+input[type=checkbox]:checked + span,input[type=radio]:checked + span {
+  color: rgb(4, 201, 236);
+  font-style: normal;
+} 
+
+div.dvField{
+  font-family: 'labelFont' !important;
+  font-size: 1em;
+  color: rgb(1, 4, 180); /*rgb(91, 204, 95);*/
+  width: 30%;
+  float: left;
+  margin: 0% 1%;
+}
+div.dvSubSection{
+  width: 100%;
+  float: left;
+margin: 2.5% 0%;
+}
+
+.dvSection label{
+  float: left;
+  position: relative;
+  padding: 1%;
+}

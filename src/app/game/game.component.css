@@ -1,0 +1,116 @@
+.gamePanel{
+    text-align:center; 
+    /* border:1px red solid; */
+    position: relative;
+}
+
+.f-left div{
+    float: left;
+    font-size: 2.2 em; 
+    /* border: 2px black solid;  */
+}
+.f-left div:hover{      
+    border:none;  
+}
+.f-left div i.O:hover{      
+    border: 2px rgb(255, 230, 0) solid;  
+    background: hsla(0, 2%, 18%, 0.5);  
+    -webkit-box-shadow: 1px 0px 10px 11px rgba(216, 199, 48,1);
+    -moz-box-shadow: 1px 0px 10px 11px rgba(216, 199, 48,1);
+    box-shadow: 1px 0px 10px 11px rgba(216, 199, 48,1);
+    border-radius: 5%;
+}
+.f-left div i.X:hover{      
+    border: 2px rgb(0, 255, 115) solid;  
+    background: hsla(0, 2%, 18%, 0.5);  
+    -webkit-box-shadow: 1px 0px 10px 11px rgb(18, 211, 105,1);
+    -moz-box-shadow: 1px 0px 10px 11px rgba(18, 211, 105,1);
+    box-shadow: 1px 0px 10px 11px rgba(18, 211, 105,1);
+    border-radius: 5%;
+}
+
+/*.f-left i:hover {
+     color: black;
+  } */
+  .O{
+      font-size: 2.5em;   
+      color:rgb(255, 230, 0);
+  }
+  .X{
+      font-size: 2.5em;   
+      color:rgb(21, 255, 0);
+  }
+.f-left span{
+    font-size: 2.5em;
+    font-weight: bold;
+    color: rgb(95, 15, 52); 
+    padding: 0%; 
+    /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif */
+}
+.dvPlayer
+{
+    border :none !important;
+    margin: 3% 1.0%;
+}
+.dvSign
+{
+    margin: 2.8% 1%;
+}
+.dvPlayer span{
+    border: none; 
+    /* margin: 75% 50%; */
+   color: rgb(95, 15, 52);
+}
+.dvHover{
+    /* top: 1%; */
+    /* left: 1%; */
+    position: fixed;
+    width: 90%;
+    height: 20%;
+    z-index: 2;
+}
+
+
+
+.symbol{
+    font-size: 2.5em !important;
+    color: red !important;   
+    -webkit-box-shadow: 1px 0px 10px 11px rgba(219,214,204,1);
+    -moz-box-shadow: 1px 0px 10px 11px rgba(219,214,204,1);
+    box-shadow: 1px 0px 10px 11px rgba(219,214,204,1);
+border-radius: 5%;
+}
+.symbolChange {
+    font-size: 2.5em !important;
+    color: white !important;    
+-webkit-box-shadow: 1px 0px 10px 4px rgba(31,25,11,0.69);
+-moz-box-shadow: 1px 0px 10px 4px rgba(31,25,11,0.69);
+box-shadow: 1px 0px 10px 4px rgba(31,25,11,0.69);
+border-radius: 5%;
+  }
+  .modeSelect{
+    border: none;
+    margin: 2.7% 2%;
+    cursor: pointer;  
+    border-radius: 5%;
+    font-size: 3em;
+      color: rgb(5, 5, 199) !important;
+  }
+  .modeSelect1{
+    border: none;
+    margin: 2.7% 2%;
+    cursor: pointer;  
+    border-radius: 5%;
+    font-size: 3em;
+      color:  rgb(235, 231, 14) !important;
+  }
+  
+  .modeSelect:hover{
+      color: black !important;
+  border-radius: 5%;
+  }
+  
+  .modeSelect1:hover{
+      color: rgb(2, 2, 2) !important;
+  border-radius: 5%;
+  }
